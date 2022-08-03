@@ -7,7 +7,7 @@ class Solution {
             if (!set.add(nums[i])) {
                 return true;
             }
-            set.add(nums[i]);
+            
         }
         return false;
         
