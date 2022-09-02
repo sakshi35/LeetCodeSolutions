@@ -3,7 +3,7 @@ class Solution {
         Map<Integer, Integer> map = new HashMap<Integer, Integer>();
         for (int i=0; i < nums.length; i++) {
           int diff = target - nums[i];
-          if (map.get(diff) != null) {
+          if (map.containsKey(diff)) {
             
             return new int[]{map.get(diff), i};
           }
